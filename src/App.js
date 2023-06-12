@@ -1,9 +1,9 @@
-import {useState, useEffect, useRef} from 'react'
-import randomWords from 'random-words'
+import {useState, useEffect, useRef} from 'react';
 const NUMB_OF_WORDS = 200
 const SECONDS = 60
 
 function App() {
+  var randomWords = require('random-words');
   const [words, setWords] = useState([])
   const [countDown, setCountDown] = useState(SECONDS)
   const [currInput, setCurrInput] = useState("")
@@ -128,6 +128,30 @@ function App() {
           </div>
         </div>
       )}
+
+{status === 'finished' && (
+        <div className="section">
+          <div className="columns">
+            <div className="column has-text-centered">
+              <p className="is-size-5">Words per minute:</p>
+              <p className="has-text-primary is-size-1">
+                {correct}
+              </p>
+            </div>
+            <div className="column has-text-centered">
+              <p className="is-size-5">Accuracy:</p>
+              {correct !== 0 ? (
+                <p className="has-text-info is-size-1">
+                  {Math.round((correct / (correct + incorrect)) * 100)}%
+                </p>
+              ) : (
+                <p className="has-text-info is-size-1">0%</p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }
