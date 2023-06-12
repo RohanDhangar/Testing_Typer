@@ -98,6 +98,7 @@ function App() {
       <div className="section">
         <div className="is-size-1 has-text-centered has-text-primary">
           <h2>{countDown}</h2>
+          <p>Please Type Something in inputbox</p>
         </div>
       </div>
       <div className="control is-expanded section">
