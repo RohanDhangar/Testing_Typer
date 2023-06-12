@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Testing_Typer/static/css/main.e6c13ad2.css",
+    "main.js": "/Testing_Typer/static/js/main.978ea8e8.js",
+    "index.html": "/Testing_Typer/index.html",
+    "main.e6c13ad2.css.map": "/Testing_Typer/static/css/main.e6c13ad2.css.map",
+    "main.978ea8e8.js.map": "/Testing_Typer/static/js/main.978ea8e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.978ea8e8.js"
+  ]
+}
